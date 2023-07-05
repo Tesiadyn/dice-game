@@ -23,7 +23,7 @@ document.querySelector('.roll').addEventListener('click', function(){
 
 	let dice = Math.floor(Math.random() * 6 ) + 1;
 	document.querySelector('.dice').style = 'display: block';
-	document.querySelector('.dice').src = 'dice' + dice + '.png';
+	document.querySelector('.dice').src = 'images/' + 'dice' + dice + '.png';
 	
 	if (currentPlayer === 1){
 
@@ -87,6 +87,8 @@ function init(){
 	document.querySelector('.player1TotalScore').textContent = '0';
 	document.querySelector('.player2TotalScore').textContent = '0';
 	document.querySelector('.roll').textContent = 'ROLL!'
+	document.querySelector('.panel-1').classList.add('active');
+	document.querySelector('.panel-2').classList.remove('active');
 	currentPlayer = 1;
 	player1TotalScore = 0;
 	player2TotalScore = 0;

@@ -14,7 +14,7 @@
 
 body {
 
-    background-image: linear-gradient(rgba(70, 25, 25, 0.3), rgba(70, 25, 25, 0.3)), url(BG.jpg);
+    background-image: linear-gradient(rgba(70, 25, 25, 0.3), rgba(70, 25, 25, 0.3)), url('/images/BG.jpg');
     background-size: cover;
     font-family: Lato;
     font-weight: 300;
@@ -185,14 +185,22 @@ i {
 
  	top: 55px;
  	font-size: 30px;
- 	
+ 	transition: all .2s;
  }
  
 .roll {
-
+    color: #f7f7f7;
  	top: 430px;
  	font-size: 30px;
- 		
+    padding: 12px;
+    background-color: #2f2f3d;
+    border-radius: 10%;
+    transition: all .2s linear;
+ }
+ .roll:hover{
+    font-weight: 700;
+    background-color: #E9FFF9;
+    color: #9ED8DB;
  }
 
 .dice {
@@ -205,4 +213,8 @@ i {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
     border-radius: 5px;
     
+}
+
+.no-access{
+    user-select: none;
 }
